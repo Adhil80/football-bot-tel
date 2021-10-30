@@ -101,6 +101,7 @@ router.get('/', function (req, res, next) {
   res.send('respond with a resource');
 });
 
+console.log('hi');
 async function start(teamA,teamB) {
   let brs = await puppeteer.launch({ headless: false })
   let page = await brs.newPage()
